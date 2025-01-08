@@ -1,2 +1,3 @@
-# nutrition-tracker
-Nutrition tracking app
+Nutrition Tracker
+
+- React App built with TypeScript
