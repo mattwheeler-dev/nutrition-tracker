@@ -1,3 +1,3 @@
-Nutrition Tracker
+# Nutrition Tracker
 
-- React App built with TypeScript
+- React App built with React + Vite

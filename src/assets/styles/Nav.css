@@ -1,7 +1,7 @@
 nav {
 	height: 3rem;
 	width: 100%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 	background-color: #101010;
 	border-bottom: 2px solid var(--primary);
 	box-shadow: 0 0 0.5rem #000;
@@ -15,4 +15,5 @@ nav {
 .sign-in {
 	font-size: 0.7rem;
 	font-weight: 300;
+	color: var(--primary);
 }
