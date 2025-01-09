@@ -1,0 +1,59 @@
+.hero {
+	min-height: 20rem;
+	height: fit-content;
+	width: 100%;
+	margin-top: 3rem;
+	padding: 3rem 0;
+	background-image: url("../images/hero-bg-lo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero-overlay {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1rem;
+	background-color: #000000aa;
+	border: 1px solid #dbdbdb9e;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.25rem #000;
+	text-align: center;
+}
+
+.hero-overlay h1 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	border-bottom: 2px solid var(--primary);
+}
+
+.hero-overlay h3 {
+	margin: 0.5rem 0;
+	font-weight: 400;
+}
+
+.hero-overlay h3 span {
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.hero-overlay h4 {
+	font-weight: 300;
+}
+
+.hero-start-btn {
+	padding: 0.25rem 0.5rem;
+	margin: 1rem auto;
+	background-color: var(--primary);
+	border: 2px solid #fff;
+	border-radius: 0.5rem;
+}
+
+.hero-sign-in {
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.hero-sign-in span {
+	font-weight: 400;
+	color: var(--primary);
+}

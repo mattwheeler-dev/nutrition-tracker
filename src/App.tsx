@@ -1,5 +1,13 @@
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+
 function App() {
-	return <></>;
+	return (
+		<>
+			<Nav />
+			<Hero />
+		</>
+	);
 }
 
 export default App;
