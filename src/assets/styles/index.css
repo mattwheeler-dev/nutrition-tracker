@@ -18,3 +18,7 @@ body {
 	color: #fff;
 	background-color: #303030;
 }
+
+section {
+	max-width: 1100px;
+}
