@@ -13,17 +13,17 @@
 	width: 80%;
 	margin: 0 auto;
 	padding: 1rem;
-	background-color: #000000aa;
-	border: 1px solid #dbdbdb9e;
-	border-radius: 0.5rem;
-	box-shadow: 0 0 0.25rem #000;
 	text-align: center;
+	background-color: #000000bb;
+	border: 2px outset #dbdbdb9e;
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
 }
 
 .hero-overlay h1 {
 	font-size: 1.5rem;
 	font-weight: 500;
-	border-bottom: 2px solid var(--primary);
+	border-bottom: var(--border);
 }
 
 .hero-overlay h3 {
@@ -45,7 +45,7 @@
 	margin: 1rem auto;
 	background-color: var(--primary);
 	border: 2px solid #fff;
-	border-radius: 0.5rem;
+	border-radius: var(--radius);
 }
 
 .hero-sign-in {

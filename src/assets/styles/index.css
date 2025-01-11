@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
 :root {
-	--primary: #fff200;
+	--primary: #7678ed;
+	--secondary: #3d348b;
+	--border: 2px solid var(--primary);
+	--radius: 0.5rem;
+	--shadow: 0 0 0.5rem #000;
 }
 
 * {
@@ -16,7 +20,7 @@ body {
 	width: 100dvw;
 	overflow-x: clip;
 	color: #fff;
-	background-color: #303030;
+	background-color: #404040;
 }
 
 section {

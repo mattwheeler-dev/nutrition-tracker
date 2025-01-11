@@ -2,6 +2,7 @@ import { useState, createContext } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 export const AppContext = createContext("");
 
@@ -15,6 +16,7 @@ function App() {
 				<Hero />
 				<Reviews />
 			</AppContext.Provider>
+			<Footer />
 		</>
 	);
 }
