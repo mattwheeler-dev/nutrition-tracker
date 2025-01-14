@@ -20,7 +20,7 @@ body {
 	width: 100dvw;
 	overflow-x: clip;
 	color: #fff;
-	background-color: #404040;
+	background-color: var(--primary);
 }
 
 section {
