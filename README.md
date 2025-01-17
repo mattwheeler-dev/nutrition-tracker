@@ -1,3 +1,3 @@
 # Nutrition Tracker
 
-- React App built with React + Vite
+Nutrition info tracking app built with React + Vite

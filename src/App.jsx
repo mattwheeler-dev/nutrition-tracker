@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 export const AppContext = createContext("");
 
-function App() {
+const App = () => {
 	const [loggedIn, setLoggedIn] = useState(false);
 
 	return (
@@ -19,6 +19,6 @@ function App() {
 			<Footer />
 		</>
 	);
-}
+};
 
 export default App;
