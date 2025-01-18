@@ -1,21 +1,21 @@
-// import { useState, useContext, createContext } from "react";
+import { useState, createContext } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 // import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 
-// export const AppContext = createContext("");
+export const AppContext = createContext("");
 
 const App = () => {
-	// const [loggedIn, setLoggedIn] = useState(false);
+	const [loggedIn, setLoggedIn] = useState(false);
 
 	return (
 		<>
-			{/* <AppContext.Provider value={{ loggedIn, setLoggedIn }}> */}
-			<Nav />
-			{/* <Welcome /> */}
-			<Home />
-			{/* </AppContext.Provider> */}
+			<AppContext.Provider value={{ loggedIn, setLoggedIn }}>
+				<Nav />
+				{/* <Welcome /> */}
+				<Home />
+			</AppContext.Provider>
 			<Footer />
 		</>
 	);
