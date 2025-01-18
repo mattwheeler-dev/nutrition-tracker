@@ -1,21 +1,19 @@
-import { useState, createContext } from "react";
+// import { useState, useContext, createContext } from "react";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
+import Welcome from "./pages/Welcome";
 
-export const AppContext = createContext("");
+// export const AppContext = createContext("");
 
 const App = () => {
-	const [loggedIn, setLoggedIn] = useState(false);
+	// const [loggedIn, setLoggedIn] = useState(false);
 
 	return (
 		<>
-			<AppContext.Provider value={{ loggedIn, setLoggedIn }}>
-				<Nav />
-				<Hero />
-				<Reviews />
-			</AppContext.Provider>
+			{/* <AppContext.Provider value={{ loggedIn, setLoggedIn }}> */}
+			<Nav />
+			<Welcome />
+			{/* </AppContext.Provider> */}
 			<Footer />
 		</>
 	);
