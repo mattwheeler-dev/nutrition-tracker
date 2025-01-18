@@ -1,0 +1,11 @@
+.today {
+	margin: 2rem 0;
+	padding: 1rem;
+	background-color: var(--secondary);
+}
+
+.summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}

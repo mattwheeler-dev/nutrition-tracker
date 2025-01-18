@@ -1,7 +1,8 @@
 // import { useState, useContext, createContext } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Welcome from "./pages/Welcome";
+// import Welcome from "./pages/Welcome";
+import Home from "./pages/Home";
 
 // export const AppContext = createContext("");
 
@@ -12,7 +13,8 @@ const App = () => {
 		<>
 			{/* <AppContext.Provider value={{ loggedIn, setLoggedIn }}> */}
 			<Nav />
-			<Welcome />
+			{/* <Welcome /> */}
+			<Home />
 			{/* </AppContext.Provider> */}
 			<Footer />
 		</>

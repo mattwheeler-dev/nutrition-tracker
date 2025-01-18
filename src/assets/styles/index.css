@@ -18,9 +18,16 @@
 body {
 	min-height: 100dvh;
 	width: 100dvw;
+	padding-top: 3rem;
 	overflow-x: clip;
 	color: #fff;
 	background-color: var(--primary);
+}
+
+/* Headings */
+h2,
+h3 {
+	text-align: center;
 }
 
 section {
