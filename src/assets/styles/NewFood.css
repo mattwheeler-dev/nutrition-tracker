@@ -1,0 +1,21 @@
+.new-food {
+	padding: 1rem;
+	background: var(--secondary);
+}
+
+.food-info {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.food-info label {
+	width: 40%;
+	margin-top: 1rem;
+}
+
+.food-info input {
+	width: 50%;
+	margin-top: 1rem;
+}

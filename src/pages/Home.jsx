@@ -1,3 +1,4 @@
+import NewFood from "../components/NewFood";
 import { FaGlassWater, FaFireFlameCurved, FaDumbbell } from "react-icons/fa6";
 import "../assets/styles/Home.css";
 
@@ -21,6 +22,8 @@ const Home = () => {
 					</div>
 				</article>
 			</section>
+
+			<NewFood />
 
 			<section className="recent">
 				<h3>Recent Activity</h3>
