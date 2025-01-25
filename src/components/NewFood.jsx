@@ -1,11 +1,17 @@
+import { FaSearch } from "react-icons/fa";
 import "../assets/styles/NewFood.css";
 
 const NewFood = () => {
 	return (
 		<section className="new-food">
 			<h2>Add Food</h2>
-			<label htmlFor="search">Search</label>
-			<input type="text" id="search" placeholder="Enter food item" />
+			<div className="search-box">
+				<label htmlFor="search">Search</label>
+				<input type="text" id="search" placeholder="Enter food item" />
+				<button>
+					<FaSearch />
+				</button>
+			</div>
 
 			<article className="food-info">
 				<label htmlFor="food-name">Name:</label>

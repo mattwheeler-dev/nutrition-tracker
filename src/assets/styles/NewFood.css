@@ -3,6 +3,18 @@
 	background: var(--secondary);
 }
 
+.search-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-box button {
+	padding: 0.25rem;
+	display: grid;
+	place-items: center;
+}
+
 .food-info {
 	display: flex;
 	flex-wrap: wrap;
