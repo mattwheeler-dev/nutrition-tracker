@@ -4,11 +4,16 @@ const Footer = () => {
 	return (
 		<footer>
 			<p>
-				Find me: <FaGlobe /> <FaLinkedin /> <FaGithub />
-			</p>
-			<p>
-				<FaRegCopyright />
-				MattWheeler-Dev 2025
+				Find me:
+				<a href="https://mattwheeler-dev.com/" target="_blank">
+					<FaGlobe />
+				</a>
+				<a href="https://www.linkedin.com/in/mattwheeler-dev/" target="_blank">
+					<FaLinkedin />
+				</a>
+				<a href="https://github.com/mattwheeler-dev" target="_blank">
+					<FaGithub />
+				</a>
 			</p>
 		</footer>
 	);

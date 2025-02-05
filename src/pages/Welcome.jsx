@@ -40,7 +40,7 @@ const Welcome = () => {
 						className="stars"
 					/>
 					<p>
-						{`"`}I had no idea how much I as over eating until I decided to
+						{`"`}I had no idea how much I was over eating until I decided to
 						track it, now I{`'`}m tracking my progress!{`"`}
 					</p>
 					<p>- Mark L.</p>

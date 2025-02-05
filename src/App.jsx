@@ -13,7 +13,7 @@ const App = () => {
 		<>
 			<AppContext.Provider value={{ loggedIn, setLoggedIn }}>
 				<Nav />
-				{!loggedIn ? <Welcome /> : <Home />}
+				{loggedIn ? <Home /> : <Welcome />}
 			</AppContext.Provider>
 			<Footer />
 		</>

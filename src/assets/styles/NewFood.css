@@ -19,7 +19,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .food-info label {
@@ -27,7 +27,12 @@
 	margin-top: 1rem;
 }
 
-.food-info input {
+.food-info input[type="text"] {
 	width: 50%;
 	margin-top: 1rem;
+}
+
+.food-info input[type="submit"] {
+	margin-top: 1.5rem;
+	padding: 0.2rem 0.4rem;
 }
