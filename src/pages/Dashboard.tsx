@@ -3,6 +3,11 @@ import { useNutritionStore } from "../state/nutritionStore";
 import type { FoodItem, MealType } from "../types/nutrition";
 import MealLog from "../components/MealLog";
 import NutritionSummary from "../components/NutritionSummary";
+import {
+	getNextDate,
+	getPrevDate,
+	formatDateDisplay,
+} from "../utils/dateHelpers";
 
 const mockFoods: FoodItem[] = [
 	{
@@ -34,6 +39,8 @@ const mockFoods: FoodItem[] = [
 const Dashboard = () => {
 	const date = useNutritionStore((s) => s.selectedDate);
 	const logs = useNutritionStore((s) => s.logs);
+	const selectedDate = useNutritionStore((s) => s.selectedDate);
+	const setDate = useNutritionStore((s) => s.setDate);
 
 	const mealTypes: MealType[] = ["breakfast", "lunch", "dinner", "snacks"];
 
@@ -47,6 +54,25 @@ const Dashboard = () => {
 
 	return (
 		<div>
+			<div className="flex justify-between items-center mb-4">
+				<button
+					onClick={() => setDate(getPrevDate(selectedDate))}
+					className="text-sm text-blue-600 hover:underline"
+				>
+					← Previous
+				</button>
+
+				<h1 className="text-lg font-bold text-gray-800">
+					{formatDateDisplay(selectedDate)}
+				</h1>
+
+				<button
+					onClick={() => setDate(getNextDate(selectedDate))}
+					className="text-sm text-blue-600 hover:underline"
+				>
+					Next →
+				</button>
+			</div>
 			<NutritionSummary />
 
 			<h1 className="text-2xl font-bold mb-4">Your Meals for {date}</h1>
