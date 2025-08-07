@@ -1,5 +1,7 @@
 export function formatDateDisplay(isoDate: string): string {
-	return new Date(isoDate).toLocaleDateString(undefined, {
+	const [year, month, day] = isoDate.split("-");
+	const localDate = new Date(Number(year), Number(month) - 1, Number(day));
+	return localDate.toLocaleDateString(undefined, {
 		weekday: "short",
 		year: "numeric",
 		month: "short",
