@@ -37,7 +37,6 @@ const mockFoods: FoodItem[] = [
 ];
 
 const Dashboard = () => {
-	const date = useNutritionStore((s) => s.selectedDate);
 	const logs = useNutritionStore((s) => s.logs);
 	const selectedDate = useNutritionStore((s) => s.selectedDate);
 	const setDate = useNutritionStore((s) => s.setDate);
@@ -46,9 +45,9 @@ const Dashboard = () => {
 
 	useEffect(() => {
 		const logs = useNutritionStore.getState().logs;
-		if (!logs[date]) {
+		if (!logs[selectedDate]) {
 			const addFood = useNutritionStore.getState().addFood;
-			mockFoods.forEach((food) => addFood(date, "snacks", food));
+			mockFoods.forEach((food) => addFood(selectedDate, "snacks", food));
 		}
 	}, []);
 
@@ -75,10 +74,12 @@ const Dashboard = () => {
 			</div>
 			<NutritionSummary />
 
-			<h1 className="text-2xl font-bold mb-4">Your Meals for {date}</h1>
+			<h1 className="text-2xl font-bold mb-4">
+				Your Meals for {formatDateDisplay(selectedDate)}
+			</h1>
 
 			{mealTypes.map((meal) => {
-				const dayLog = logs[date] || {
+				const dayLog = logs[selectedDate] || {
 					breakfast: [],
 					lunch: [],
 					dinner: [],
