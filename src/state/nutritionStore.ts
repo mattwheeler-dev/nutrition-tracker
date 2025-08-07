@@ -11,12 +11,20 @@ interface NutritionState {
 	addFood: (date: string, meal: MealType, item: FoodItem) => void;
 	removeFood: (date: string, meal: MealType, index: number) => void;
 	setDate: (date: string) => void;
+	searchQuery: string;
+	selectedMeal: MealType;
+	setSearchQuery: (query: string) => void;
+	setSelectedMeal: (meal: MealType) => void;
 }
 
 export const useNutritionStore = create<NutritionState>((set) => ({
 	selectedDate: new Date().toISOString().split("T")[0],
 	logs: {},
 	setDate: (date) => set({ selectedDate: date }),
+	searchQuery: "",
+	selectedMeal: "lunch",
+	setSearchQuery: (query) => set({ searchQuery: query }),
+	setSelectedMeal: (meal) => set({ selectedMeal: meal }),
 	addFood: (date, meal, item) =>
 		set((state) => {
 			const currentLog = state.logs[date] || {

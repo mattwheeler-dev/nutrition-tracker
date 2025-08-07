@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useNutritionStore } from "../state/nutritionStore";
 import type { FoodItem, MealType } from "../types/nutrition";
 import MealLog from "../components/MealLog";
+import NutritionSummary from "../components/NutritionSummary";
 
 const mockFoods: FoodItem[] = [
 	{
@@ -46,6 +47,8 @@ const Dashboard = () => {
 
 	return (
 		<div>
+			<NutritionSummary />
+
 			<h1 className="text-2xl font-bold mb-4">Your Meals for {date}</h1>
 
 			{mealTypes.map((meal) => {
