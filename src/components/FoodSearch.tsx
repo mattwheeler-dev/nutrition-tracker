@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useNutritionStore } from "../state/nutritionStore";
-import type { MealType, FoodItem } from "../types/nutrition";
+import { useNutritionStore } from "@/stores/nutritionStore";
+import type { MealType, FoodItem } from "@/types/nutrition";
 
 const mockResults: FoodItem[] = [
 	{

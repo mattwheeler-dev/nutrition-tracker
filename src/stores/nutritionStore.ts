@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { FoodItem, MealType } from "../types/nutrition";
+import type { FoodItem, MealType } from "@/types/nutrition";
 
 type DailyLog = {
 	[meal in MealType]: FoodItem[];

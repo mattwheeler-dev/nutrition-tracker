@@ -1,4 +1,4 @@
-import type { FoodItem } from "../types/nutrition";
+import type { FoodItem } from "@/types/nutrition";
 
 export function getNutritionTotals(foodItems: FoodItem[]) {
 	return foodItems.reduce(

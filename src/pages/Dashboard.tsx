@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNutritionStore } from "../state/nutritionStore";
+import { useNutritionStore } from "../stores/nutritionStore";
 import type { FoodItem, MealType } from "../types/nutrition";
 import MealLog from "../components/MealLog";
 import NutritionSummary from "../components/NutritionSummary";

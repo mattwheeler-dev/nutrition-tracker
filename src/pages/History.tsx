@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useNutritionStore } from "../state/nutritionStore";
+import { useNutritionStore } from "../stores/nutritionStore";
 import { getNutritionTotals } from "../utils/nutritionHelpers";
 import { getLastNDates, formatDateDisplay } from "../utils/dateHelpers";
 import type { FoodItem } from "../types/nutrition";

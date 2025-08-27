@@ -1,5 +1,5 @@
-import { useNutritionStore } from "../state/nutritionStore";
-import type { MealType, FoodItem } from "../types/nutrition";
+import { useNutritionStore } from "@/stores/nutritionStore";
+import type { MealType, FoodItem } from "@/types/nutrition";
 
 interface MealLogProps {
 	meal: MealType;

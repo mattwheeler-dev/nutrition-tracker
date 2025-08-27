@@ -1,5 +1,5 @@
-import { useNutritionStore } from "../state/nutritionStore";
-import type { FoodItem } from "../types/nutrition";
+import { useNutritionStore } from "@/stores/nutritionStore";
+import type { FoodItem } from "@/types/nutrition";
 
 const mockResults: FoodItem[] = [
 	{

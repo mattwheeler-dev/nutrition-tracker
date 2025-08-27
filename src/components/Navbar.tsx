@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { useNutritionStore } from "../state/nutritionStore";
-import type { MealType } from "../types/nutrition";
+import { useNutritionStore } from "@/stores/nutritionStore";
+import type { MealType } from "@/types/nutrition";
 
 const navItems = [
 	{ name: "Home", to: "/" },

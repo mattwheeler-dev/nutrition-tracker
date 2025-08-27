@@ -1,6 +1,6 @@
-import { useNutritionStore } from "../state/nutritionStore";
-import type { MealType } from "../types/nutrition";
-import { getNutritionTotals } from "../utils/nutritionHelpers";
+import { useNutritionStore } from "@/stores/nutritionStore";
+import type { MealType } from "@/types/nutrition";
+import { getNutritionTotals } from "@/utils/nutritionHelpers";
 
 const mealTypes: MealType[] = ["breakfast", "lunch", "dinner", "snacks"];
 
